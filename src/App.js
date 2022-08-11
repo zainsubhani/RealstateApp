@@ -52,7 +52,7 @@ const App = () => {
       <Navbar/>
       <Rent/>
       <Search/>
-      <div className='lg:p-20 grid gap-10 grid-cols-4 md:grid-cols-2 pt-10 sm:grid-cols-1 ' >
+      <div className='lg:p-20 grid grid-cols-4 gap-10 md:grid-cols-2 ' >
         {
           data.map((props)=>(
             <Ads key={props.id} address={props.Adress} />
