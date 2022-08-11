@@ -8,7 +8,7 @@ import { BiBed,BiBath,BiArea } from "react-icons/bi";
 const Ads = (props) => {
   return (
     
-    <div className='w-[35vh] h-fit bg-transparent pt-5 pl-5 pb-10 border-2 border-[black] ' >
+    <div className='w-[35vh] h-fit bg-transparent pt-5 pl-5 pb-10 border-2 border-[black] md: w-[32vh] pb-5 pt-2 pl-2 ' >
         <div className='w-[30vh] h-[35vh] bg-[pink] rounded-tl-3xl rounded-br-3xl  ' >
             <img src={adimg} alt="" className='w-[30vh] h-[35vh] rounded-tl-3xl rounded-br-3xl ' />
 

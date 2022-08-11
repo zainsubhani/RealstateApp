@@ -2,8 +2,8 @@ import React from 'react'
 import img from '../../../Assets/house-banner.png'
 const Rent = () => {
   return (
-    <div className='grid grid-cols-12 pt-20 pl-40' >
-        <div className='col-span-8' >
+    <div className='grid grid-cols-12 pt-20 pl-40 md: pt-10 pl-10 sm: flex  ' >
+        <div className='col-span-8  ' >
             <div className='text-6xl font-bold' >
                 <p><span className='text-[purple]' >Rent</span> Your Dream</p>
                 <p>House With Us.</p>
@@ -15,7 +15,7 @@ const Rent = () => {
 
         </div>
         <div className='col-span-4  ' >
-            <img src={img} alt="HomeImage" className='rounded-tl-3xl h-[60vh] w-[70vh]	  ' />
+            <img src={img} alt="HomeImage" className='rounded-tl-3xl h-[60vh] w-[70vh] md:h-[30vh] w-[35vh] 	  ' />
 
         </div>
     </div>

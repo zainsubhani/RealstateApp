@@ -4,12 +4,12 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-purple-500 shadow">
+        <nav className="w-full bg-white shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="javascript:void(0)">
-                            <h2 className="text-2xl font-bold text-white">LOGO</h2>
+                            <h2 className="text-2xl font-bold">LOGO</h2>
                         </a>
                         <div className="md:hidden">
                             <button
@@ -19,7 +19,7 @@ export default function NavBar() {
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
+                                        className="w-6 h-6"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                     >
@@ -32,7 +32,7 @@ export default function NavBar() {
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
+                                        className="w-6 h-6"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -55,36 +55,16 @@ export default function NavBar() {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        
-                        <div className="mt-3 space-y-2 lg:hidden md:inline-block">
-                    <a
-                        href="javascript:void(0)"
-                        className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
-                    >
-                        Sign in
-                    </a>
-                    <a
-                        href="javascript:void(0)"
-                        className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
-                    >
-                        Sign up
-                    </a>
-                </div>
+                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                            
+                            <li className="text-[white] hover:text-blue-600  ">
+                                <a href="javascript:void(0) " className="w-[200px] h-[200px] p-5 rounded-full bg-[purple]" >Login</a>
+                            </li>
+                            <li className="text-gray-600 hover:text-blue-600">
+                                <a href="javascript:void(0)">Sign up</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div className="hidden space-x-2 md:inline-block">
-                    <a
-                        href="javascript:void(0)"
-                        className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
-                    >
-                        Sign in
-                    </a>
-                    <a
-                        href="javascript:void(0)"
-                        className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
-                    >
-                        Sign up
-                    </a>
                 </div>
             </div>
         </nav>
